@@ -1,136 +1,107 @@
-// Resume data
-const resume = {
-  name: "Gustavo Orocio",
-  title: "Consultant",
-  phone: "(925)818-3463",
-  email: "Gustavoorocio@gmail.com",
-  location: "San Francisco, CA",
-  education: [
-    {
-      university: "University of San Francisco",
-      location: "Downtown San Francisco",
-      degree: "M.S of Entrepreneurship & Innovation",
-      gpa: "3.9"
-    },
-    {
-      university: "Ottawa University Arizona",
-      location: "Surprise, AZ",
-      degree: "Student Athlete: Men’s Soccer Scholarship Recipient"
-    }
-  ],
-  experience: [
-    {
-      duration: "Aug. 2023 - Aug. 2024",
-      position: "Consultant",
-      company: "C-space",
-      location: "San Francisco, CA (Remote)",
-      responsibilities: [
-        "Advised clients like Charles Schwab and Citizens Bank using insights to guide product launches and marketing.",
-        "Conducted global research, analyzed trends, and developed solutions by engaging communities and monitoring brand perception.",
-        "Successfully managed and moderated an online community with over 400 members, representing the voice of the customer to the internal team and client."
-      ]
-    },
-    {
-      duration: "Jan. 2024 - Present",
-      position: "Operations Manager",
-      company: "Professional Real Estate Investments LLC",
-      location: "Contra Costa County, CA",
-      responsibilities: [
-        "Range of duties includes managing cash inflow/outflow, forecasting/projections, and operational management."
-      ]
-    },
-    {
-      duration: "Jan. 2019 - Aug. 2023",
-      position: "Corporate Development Associate",
-      company: "Prudential Financial",
-      location: "Newark, New Jersey (Remote)",
-      responsibilities: [
-        "Conducted thorough financial due diligence for transactions valued over $750 million.",
-        "Developed and presented strategic analyses for Prudential's executive team, resulting in a 13% increase in department revenue during the quarter."
-      ]
-    },
-    {
-      duration: "Jan. 2022 - Mar. 2022",
-      position: "Risk Associate",
-      company: "BHG Financials",
-      location: "New York, NY (Remote)",
-      responsibilities: [
-        "Reduced default rates by 10% through implementation of new risk management strategies.",
-        "Improved loan approval process efficiency by 15% through streamlining risk assessment procedures."
-      ]
-    }
-  ],
-  clubs: [
-    "University of San Francisco Startup Club",
-    "University of San Francisco Men’s Club Soccer",
-    "Student Athlete Advisory Committee Member",
-    "American Marketing Association Club Member"
-  ]
-};
+<div class="col-lg-8 right-side">
+            <article>
+                <section>
+                    <h2 class="section-title">
+                        <span class="fa-stack fa-xs">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Education
+                    </h2>
 
-// Generate HTML code
-function generateResumeHTML(resume) {
-  let html = `
-    <h1>${resume.name}</h1>
-    <h2>${resume.title}</h2>
-    <p>Phone: ${resume.phone}</p>
-    <p>Email: ${resume.email}</p>
-    <p>Location: ${resume.location}</p>
-    
-    <h3>Education</h3>
-    <ul>
-  `;
+                    <div class="school">
+                        <div class="upper-row">
+                            <h3 class="school-name">University of San Francisco</h3>
+                            <div class="time">Graduation - May 2023</div>
+                        </div>
+                        <div class="school-title">M.S of Entrepreneurship & Innovation<br>GPA: 3.9</div>
 
-  resume.education.forEach(edu => {
-    html += `
-      <li>${edu.degree} - ${edu.university}, ${edu.location}</li>
-    `;
-  });
+                    </div>
+                </section>
 
-  html += `
-    </ul>
-    <h3>Experience</h3>
-  `;
+                <section>
+                    <h2 class="section-title">
+                        <span class="fa-stack fa-xs">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Technical Skills:
+                    </h2>
+                    <b>Languages:</b> Java, Python, C++, PHP, JavaScript, CSS, HTML<br>
+                    <b>Technologies:</b> Unix, Git, AWS, Android Studio, Docker, Django, MATLAB, Jupyter
+                    Notebook<br>
+                </section>
 
-  resume.experience.forEach(exp => {
-    html += `
-      <div>
-        <h4>${exp.duration}</h4>
-        <h4>${exp.position}</h4>
-        <h5>${exp.company}, ${exp.location}</h5>
-        <ul>
-    `;
+                <section>
+                    <h2 class="section-title">
+                        <span class="fa-stack fa-xs">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Experience
+                    </h2>
+                    <div class="job">
+                        <div class="upper-row">
+                            <h3 class="company">C-space / San Francisco, CA (Remote)</h3>
+                            <div class="time">Aug. 2023 - Aug. 2024</div>
+                        </div>
+                        <div class="job-title">Consultant</div>
 
-    exp.responsibilities.forEach(responsibility => {
-      html += `
-        <li>${responsibility}</li>
-      `;
-    });
+                        <ul>
+                            <li>Advised clients like Charles Schwab and Citizens Bank using insights to guide product launches and marketing. Conducted global research, analyzed trends, and developed solutions by engaging communities and monitoring brand perception.</li>
+                            <li>Successfully managed and moderated an online community with over 400 members, representing the voice of the customer to the internal team and client.</li>
+                        </ul>
+                    </div>
 
-    html += `
-        </ul>
-      </div>
-    `;
-  });
+                    <div class="job">
+                        <div class="upper-row">
+                            <h3 class="company">Professional Real Estate Investments LLC / Contra Costa County, CA</h3>
+                            <div class="time">Jan. 2024 - Present</div>
+                        </div>
+                        <div class="job-title">Operations Manager</div>
 
-  html += `
-    <h3>Clubs & Activities</h3>
-    <ul>
-  `;
+                        <ul>
+                            <li>Range of duties includes managing cash inflow/outflow, forecasting/projections, and operational management.</li>
+                        </ul>
+                    </div>
 
-  resume.clubs.forEach(club => {
-    html += `
-      <li>${club}</li>
-    `;
-  });
+                    <div class="job">
+                        <div class="upper-row">
+                            <h3 class="company">Prudential Financial / Newark, New Jersey (Remote)</h3>
+                            <div class="time">Jan. 2019 - Aug. 2023</div>
+                        </div>
+                        <div class="job-title">Corporate Development Associate</div>
 
-  html += `
-    </ul>
-  `;
+                        <ul>
+                            <li>Conducted thorough financial due diligence for transactions valued over $750 million.</li>
+                            <li>Developed and presented strategic analyses for Prudential's executive team, resulting in a 13% increase in department revenue during the quarter.</li>
+                        </ul>
+                    </div>
 
-  return html;
-}
+                    <div class="job">
+                        <div class="upper-row">
+                            <h3 class="company">BHG Financials / New York, NY (Remote)</h3>
+                            <div class="time">Jan. 2022 – Mar. 2022</div>
+                        </div>
+                        <div class="job-title">Risk Associate</div>
 
-// Example usage
-const resumeHTML = generateResumeHTML(resume);
-document.getElementById("resume").innerHTML = resumeHTML;
+                        <ul>
+                            <li>Reduced default rates by 10% through implementation of new risk management strategies.</li>
+                            <li>Improved loan approval process efficiency by 15% through streamlining risk assessment procedures.</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h2 class="section-title">
+                        <span class="fa-stack fa-xs">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-pen fa-stack-1x fa-inverse"></i>
+                        </span>
+                        Projects
+                    </h2>
+
+                    <div class="job">
+                        <div class="upper-row">
+                            <h3 class="I'm sorry, but I am unable to display the HTML code you provided as it seems to be incomplete or formatted incorrectly. However, based on the information you provided, here is a revised version of the code that should display the education, skills, experience, and projects sections properly:
