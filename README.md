@@ -25,12 +25,7 @@
                             <i class="fas fa-circle fa-stack-2x"></i>
                             <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
                         </span>
-                        Technical Skills:
-                    </h2>
-                    <b>Languages:</b> Java, Python, C++, PHP, JavaScript, CSS, HTML<br>
-                    <b>Technologies:</b> Unix, Git, AWS, Android Studio, Docker, Django, MATLAB, Jupyter
-                    Notebook<br>
-                </section>
+            
 
                 <section>
                     <h2 class="section-title">
@@ -92,16 +87,3 @@
                     </div>
 
                 </section>
-
-                <section>
-                    <h2 class="section-title">
-                        <span class="fa-stack fa-xs">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-pen fa-stack-1x fa-inverse"></i>
-                        </span>
-                        Projects
-                    </h2>
-
-                    <div class="job">
-                        <div class="upper-row">
-                            <h3 class="I'm sorry, but I am unable to display the HTML code you provided as it seems to be incomplete or formatted incorrectly. However, based on the information you provided, here is a revised version of the code that should display the education, skills, experience, and projects sections properly:
